@@ -21,7 +21,8 @@ html, body {
   min-height: 100%;
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   color: var(--lumo-charcoal);
-  background: var(--lumo-charcoal) linear-gradient(180deg, var(--lumo-charcoal) 0%, var(--lumo-red-tint) 100%);
+  background:
+        url("Images/Taxi-Rank.jpg") center/cover no-repeat;
 }
 
 body { min-height: 100vh; }
@@ -87,13 +88,20 @@ a { color: var(--lumo-red-dark); text-decoration: none; }
   box-shadow: var(--shadow);
 }
 
+.kick-lead {
+    text-align: center;
+}
+
 .page-kicker {
-  color: var(--lumo-red-dark);
-  font-size: 11px;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  margin-bottom: 10px;
+  margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    height: 150px;
+
+    object-fit: cover;
+    border: 4px solid white;
+    transition: transform 0.3s ease;
+  
 }
 
 h1, h2 {
@@ -124,7 +132,10 @@ h2 {
   margin: 24px 0;
   min-height: 172px;
   border-radius: 18px;
-  background: var(--lumo-red-tint);
+      background:
+        url("Images/Brand-LuMo.jpg") center/cover no-repeat;
+        background-size: 175%;
+        background-position: 50% 57%;
   position: relative;
   overflow: hidden;
 }
